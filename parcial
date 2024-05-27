@@ -1,0 +1,54 @@
+package Ejercicios;
+
+import java.util.Scanner;
+
+import java.util.Scanner;
+
+public class aplicacioncombate {
+	public static void main(String[] args) {
+		int fraccionA=1500;	
+		int fraccionB=1300;
+		
+		Scanner leer= new Scanner(System.in);
+		
+		int infanteriaA1=leer.nextInt();
+		int muertosA1=30;
+		int heridosA1=60;
+		int desertoresA1=90;
+		
+		int infanteriaB1=leer.nextInt();
+		int muertosB1=50;
+		int heridosB1=90;
+		int desertoresB1=10;
+		
+		int CaballeriaA2=leer.nextInt();
+		int muertosA2=10;
+		int heridosA2=60;
+		int desertoresA2=30;
+		
+		int CaballeriaB2=leer.nextInt();
+		int muertosB2=200;
+		int heridosB2=180;
+		int desertoresB2=20;
+		
+		int CaballeriapesadaA3=leer.nextInt();
+		int muertosA3=2;
+		int heridosA3=3;
+		int desertoresA3=0;
+		
+		int CaballeriapesadaB3=leer.nextInt();
+		int muertosB3=10;
+		int heridosB3=5;
+		int desertoresB3=75;
+		
+		int resta= 
+		
+		fraccionA= infanteriaA1- muertosA1-heridosA1- desertoresA1;
+		fraccionA= CaballeriaA2- muertosA2-heridosA2- desertoresA2;
+		fraccionA= CaballeriapesadaA3- muertosA3-heridosA3- desertoresA3;
+		
+		fraccionB= infanteriaB1- muertosB1-heridosB1- desertoresB1;
+		fraccionB= CaballeriaB2- muertosB2-heridosB2- desertoresB2;
+		fraccionB= CaballeriapesadaB3- muertosB3-heridosB3- desertoresB3;
+		
+		 System.out.println("total fraccionA= infanteria " );
