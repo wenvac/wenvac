@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class SumaMatrices {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Ingrese el número de filas y columnas de las matrices:");
+        int filas = scanner.nextInt();
+        int columnas = scanner.nextInt();
+
+        int[][] matrizA = new int[filas][columnas];
+        int[][] matrizB = new int[filas][columnas];
+        int[][] sumaMatrices = new int[filas][columnas];
+
+        System.out.println("Ingrese los elementos de la matriz A:");
+        leerMatriz(scanner, matrizA);
+
+        System.out.println("Ingrese los elementos de la matriz B:");
+        leerMatriz(scanner, matrizB);
+
+        // Suma de las matrices
+        for (int i = 0; i < filas; i++) {
+            for (int j = 0; j < columnas; j++) {
+                sumaMatrices[i][j] = matrizA[i][j] + matrizB[i][j];
+            }
+        }
+
+        // Mostrar la matriz resultante
+        System.out.println("La suma de las matrices es:");
+        mostrarMatriz(sumaMatrices);
+    }
+
+    // Método para leer una matriz desde la consola
+    public static void leerMatriz(Scanner scanner, int[][] matriz) {
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[0].length; j++) {
+                matriz[i][j] = scanner.nextInt();
+            }
+        }
+    }
+
+    // Método para mostrar una matriz
+    public static void mostrarMatriz(int[][] matriz) {
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[0].length; j++) {
+                System.out.print(matriz[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
